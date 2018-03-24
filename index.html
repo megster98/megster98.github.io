@@ -3,16 +3,43 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css" />
+    
+   
+    <script type="text/javascript">
+
+        function questionpicture(){ 
+        var picArray = new Array();
+        picArray[1] = "https://i.ebayimg.com/images/g/Dp4AAOxyx0JTiQn-/s-l500.jpg";
+        picArray[2] = "https://images-na.ssl-images-amazon.com/images/I/61id7dm4b6L._SY717_.jpg";
+        picArray[3] = "https://cdn2.bigcommerce.com/server5000/yshlhd/products/7344/images/128592/full.groundhogday-4999__56867.1512009364.1280.1280.jpg?c=2";
+        var rnd = Math.floor(Math.random() * picArray.length);
+        if (rnd == 0) {
+            rnd = 1;
+        }
+        document.write('<img class = "who" src = "' + picArray[rnd] + '">');
+         
+        }
+
+    </script>
     </head>
     
     <body>
-        <h1> Prophet Orpheus</h1>
-        <p> Coder Dino
-        Will code for food </p>
+        <h2> What 90s Movie Should You Watch?</h2>
+        <p> Click for a totally bangin' movie recommendation!
+        </p>
+        
+         <img id="questionpic" src="https://maps.gstatic.com/mapfiles/markers2/dd-via-transparent.png" alt="" />
+
+    <button onclick="questionpicture()">Click Me!
+    </button>
+    
+     <button onclick="questionpicture()">Click Me!
+    </button>
+
     </body>
     
-    <body>
-        <img src = "http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/theterminator.jpg?itok=dfpsF_qg&resize=1100x619">
-    </body>
+
+    
+  
     
 </html>
